@@ -48,5 +48,5 @@ function queryDatabase() {
     });
   });
 
-  connection.execSql(request);
+  return connection.execSql(request);
 }

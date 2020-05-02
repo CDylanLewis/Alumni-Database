@@ -24,11 +24,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "src/css/style.min.css",
               "src/css/bootstrap.min.css",
               "src/css/mdb.min.css",
               "src/css/fontawesome/css/all.css",
+              "src/styles.css",
+              "src/css/style.min.css",
               "src/css/modules/animations-extended.min.css",
               "src/css/animate.css",
               "src/css/css.css"
@@ -103,9 +103,24 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/css/bootstrap.min.css",
+              "src/css/mdb.min.css",
+              "src/css/fontawesome/css/all.css",
+              "src/styles.css",
+              "src/css/style.min.css",
+              "src/css/modules/animations-extended.min.css",
+              "src/css/animate.css",
+              "src/css/css.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/jquery-3.4.1.min.js",
+              "src/js/angular.min.js",
+              "src/js/bootstrap.min.js",
+              "src/js/mdb.min.js",
+              "src/css/fontawesome/js/all.js",
+              "src/js/popper.min.js",
+              "src/js/modules/wow.js"
+            ]
           }
         },
         "lint": {
@@ -134,6 +149,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "Alumni-Database"
 }
