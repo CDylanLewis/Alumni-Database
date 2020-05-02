@@ -25,7 +25,12 @@ export class DataTableComponent implements AfterViewInit, OnInit {
   }
   ngOnInit() {
     this.dataSource = new DataTableDataSource();
+    
 
+  }
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
 

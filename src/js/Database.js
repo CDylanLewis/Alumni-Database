@@ -42,9 +42,9 @@ function queryDatabase() {
     }
   );
 
-  request.on("row", columns => {
-    columns.forEach(column => {
-      console.log("%s\t%s", column.metadata.colName, column.value);
+  request.on("row", rows => {
+    rows.forEach(row => {
+      console.log(row.value);
     });
   });
 

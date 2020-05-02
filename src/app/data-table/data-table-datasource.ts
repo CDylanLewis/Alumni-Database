@@ -17,6 +17,7 @@ export interface DataTableItem {
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: DataTableItem[] = [
   { FName: 'Dylan', LName: 'Hixson-Lewis', Email: 'cdylanlewis1996@gmail.com', Phone: '9188141362', Company: 'OSU', Position: 'Tech' },
+  
 ];
 
 /**

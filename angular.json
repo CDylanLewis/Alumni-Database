@@ -40,7 +40,8 @@
               "src/js/mdb.min.js",
               "src/css/fontawesome/js/all.js",
               "src/js/popper.min.js",
-              "src/js/modules/wow.js"
+              "src/js/modules/wow.js",
+              "src/js/Database.js"
             ]
           },
           "configurations": {
@@ -119,7 +120,8 @@
               "src/js/mdb.min.js",
               "src/css/fontawesome/js/all.js",
               "src/js/popper.min.js",
-              "src/js/modules/wow.js"
+              "src/js/modules/wow.js",
+              "src/js/Database.js"
             ]
           }
         },
