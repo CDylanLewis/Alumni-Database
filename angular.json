@@ -34,7 +34,8 @@
               "src/js/bootstrap.min.js",
               "src/js/mdb.min.js",
               "src/js/jquery-3.4.1.min.js",
-              "src/css/fontawesome/js/all.js"
+              "src/css/fontawesome/js/all.js",
+              "src/js/popper.min.js"
             ]
           },
           "configurations": {
