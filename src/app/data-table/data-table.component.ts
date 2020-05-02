@@ -16,7 +16,7 @@ export class DataTableComponent implements AfterViewInit, OnInit {
   dataSource: DataTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name'];
+  displayedColumns = ['FName', 'LName', 'Email', 'Phone', 'Company', 'Position'];
 
   ngOnInit() {
     this.dataSource = new DataTableDataSource();
