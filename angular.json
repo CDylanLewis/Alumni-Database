@@ -28,14 +28,17 @@
               "src/css/style.min.css",
               "src/css/bootstrap.min.css",
               "src/css/mdb.min.css",
-              "src/css/fontawesome/css/all.css"
+              "src/css/fontawesome/css/all.css",
+              "src/css/modules/animations-extended.min.css",
+              "src/css/animate.css"
             ],
             "scripts": [
               "src/js/bootstrap.min.js",
               "src/js/mdb.min.js",
               "src/js/jquery-3.4.1.min.js",
               "src/css/fontawesome/js/all.js",
-              "src/js/popper.min.js"
+              "src/js/popper.min.js",
+              "src/js/modules/wow.js"
             ]
           },
           "configurations": {
