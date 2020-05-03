@@ -16,8 +16,23 @@ export interface DataTableItem {
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: DataTableItem[] = [
+  { FName: 'Kelse', LName: 'Berry', Email: 'kelse_berry@yahoo.com', Phone: '2108753811', Company: 'Stillwater Medical Center', Position: 'Tech' },
+  { FName: 'Jakob', LName: 'Cox', Email: 'jcox_97@sbcglobal.net', Phone: '2812242729', Company: 'AEG Fules', Position: 'Global Sales Analyst' },
   { FName: 'Dylan', LName: 'Hixson-Lewis', Email: 'cdylanlewis1996@gmail.com', Phone: '9188141362', Company: 'OSU', Position: 'Tech' },
-  
+  { FName: 'Emily', LName: 'Ladd', Email: 'e_ladd@outlook.com', Phone: '8065776310', Company: 'Paycom', Position: 'Scrum Master' },
+  { FName: 'Kap', LName: 'Lian', Email: 'gylianpu@yahoo.com', Phone: '9182001771', Company: 'Sian Sushi', Position: 'Owner' },
+  { FName: 'Hunter', LName: 'Pogue', Email: 'hpogue777@gmail.com', Phone: '9188592209', Company: 'ExxonMobil', Position: 'IT' },
+  { FName: 'Brady', LName: 'Sestak', Email: 'brady.sestak@gmail.com', Phone: 'N/A', Company: 'Paycom', Position: 'Software designer' },
+  { FName: 'Maddy', LName: 'Thompson', Email: 'mad.thomspon', Phone: '4059026268', Company: 'Tinker AFB', Position: 'Contracting Specialist' },
+  { FName: 'Matthew', LName: 'Tucker', Email: 'matthew.tucker.d@outlook.com', Phone: '8178761028', Company: 'Microsoft', Position: 'Associate Services Consultant' },
+  { FName: 'Robert', LName: 'Underwood', Email: 'runderw@okstate.edu', Phone: '9182693425', Company: 'ConocoPhillips', Position: 'IT Analyst' },
+  { FName: 'Brenden', LName: 'Wedel', Email: 'bvwedel@yahoo.com', Phone: '5803954071', Company: 'Stillwater Medical Center', Position: 'Tech' },
+  { FName: 'Nathan', LName: 'Wood', Email: 'nathan_wood013@yahoo.com', Phone: '4052074964', Company: 'Tinker AFB', Position: 'Program Analyst' },
+
+
+
+
+
 ];
 
 /**
