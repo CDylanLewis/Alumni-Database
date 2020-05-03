@@ -24,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/css/bootstrap.min.css",
+              "src/css/bootstrap.css",
               "src/css/mdb.min.css",
               "src/css/fontawesome/css/all.css",
               "src/styles.css",
