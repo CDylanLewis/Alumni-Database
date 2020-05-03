@@ -35,13 +35,12 @@
             ],
             "scripts": [
               "src/js/jquery-3.4.1.min.js",
-              "src/js/angular.min.js",
               "src/js/bootstrap.min.js",
               "src/js/mdb.min.js",
               "src/css/fontawesome/js/all.js",
               "src/js/popper.min.js",
               "src/js/modules/wow.js",
-              "src/js/Database.js"
+              "src/js/angular.min.js",
             ]
           },
           "configurations": {
@@ -115,13 +114,12 @@
             ],
             "scripts": [
               "src/js/jquery-3.4.1.min.js",
-              "src/js/angular.min.js",
               "src/js/bootstrap.min.js",
               "src/js/mdb.min.js",
               "src/css/fontawesome/js/all.js",
               "src/js/popper.min.js",
               "src/js/modules/wow.js",
-              "src/js/Database.js"
+              "src/js/angular.min.js",
             ]
           }
         },
