@@ -29,10 +29,6 @@ const EXAMPLE_DATA: DataTableItem[] = [
   { FName: 'Brenden', LName: 'Wedel', Email: 'bvwedel@yahoo.com', Phone: '5803954071', Company: 'Stillwater Medical Center', Position: 'Tech' },
   { FName: 'Nathan', LName: 'Wood', Email: 'nathan_wood013@yahoo.com', Phone: '4052074964', Company: 'Tinker AFB', Position: 'Program Analyst' },
 
-
-
-
-
 ];
 
 /**
@@ -98,6 +94,10 @@ export class DataTableDataSource extends DataSource<DataTableItem> {
       switch (this.sort.active) {
         case 'FName': return compare(a.FName, b.FName, isAsc);
         case 'LName': return compare(+a.LName, +b.LName, isAsc);
+        case 'Email': return compare(a.Email, b.Email, isAsc);
+        case 'Phone': return compare(+a.Phone, +b.Phone, isAsc);
+        case 'Company': return compare(a.Company, b.Company, isAsc);
+        case 'Position': return compare(+a.Position, +b.Position, isAsc);
         default: return 0;
       }
     });
