@@ -9,6 +9,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -22,9 +23,10 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
     MatPaginatorModule,
     MatSortModule,
     MatFormFieldModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, DataTableComponent]
 })
 export class AppModule { }

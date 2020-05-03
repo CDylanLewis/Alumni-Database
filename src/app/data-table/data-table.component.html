@@ -1,45 +1,45 @@
-<div class="mat-elevation-z8 table-responsive">
-  <mat-table class="mat-table-lg table-responsive table-hover " matSort aria-label="Elements">
-    <!-- Id Column -->
-    <ng-container matColumnDef="FName">
-      <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>First Name</th>
-      <td mat-cell style="padding: 1%; " *matCellDef="let row">{{row.FName}}</td>
-    </ng-container>
+<div class="mat-elevation-z8 table-responsive mat-table-lg">
+    <mat-table class="mat-table-lg table-responsive table-hover" style="width: fit-content;" matSort aria-label="Elements">
+      <!-- FName Column -->
+      <ng-container matColumnDef="FName">
+        <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>First Name</th>
+        <td mat-cell style="padding: 1%; " *matCellDef="let row">{{row.FName}}</td>
+      </ng-container>
 
-    <!-- Name Column -->
-    <ng-container matColumnDef="LName">
-      <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Last Name</th>
-      <td mat-cell style="padding: 1%;" *matCellDef="let row">{{row.LName}}</td>
-    </ng-container>
+      <!-- LName Column -->
+      <ng-container matColumnDef="LName">
+        <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Last Name</th>
+        <td mat-cell style="padding: 1%;" *matCellDef="let row">{{row.LName}}</td>
+      </ng-container>
 
-    <!-- Id Column -->
-    <ng-container matColumnDef="Email">
-      <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Email</th>
-      <td mat-cell style="padding: 1%;" *matCellDef="let row">{{row.Email}}</td>
-    </ng-container>
+      <!-- Email Column -->
+      <ng-container matColumnDef="Email">
+        <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Email</th>
+        <td mat-cell style="padding: 1%;" *matCellDef="let row">{{row.Email}}</td>
+      </ng-container>
 
-    <!-- Name Column -->
-    <ng-container matColumnDef="Phone">
-      <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Phone</th>
-      <td mat-cell style="padding: 1%;" *matCellDef="let row">{{row.Phone}}</td>
-    </ng-container>
+      <!-- Phone Column -->
+      <ng-container matColumnDef="Phone">
+        <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Phone</th>
+        <td mat-cell style="padding: 1%;" *matCellDef="let row">{{row.Phone}}</td>
+      </ng-container>
 
-    <!-- Id Column -->
-    <ng-container matColumnDef="Company" style="padding: 1%;">
-      <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Company</th>
-      <td mat-cell style="padding: 1%;" *matCellDef="let row">{{row.Company}}</td>
-    </ng-container>
+      <!-- Company Column -->
+      <ng-container matColumnDef="Company" style="padding: 1%;">
+        <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Company</th>
+        <td mat-cell style="padding: 1%;" *matCellDef="let row">{{row.Company}}</td>
+      </ng-container>
 
-    <!-- Name Column -->
-    <ng-container matColumnDef="Position">
-      <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Position</th>
-      <td mat-cell style="padding: 1%;" *matCellDef="let row">{{row.Position}}</td>
-    </ng-container>
+      <!-- Name Column -->
+      <ng-container matColumnDef="Position">
+        <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Position</th>
+        <td mat-cell style="padding: 1%;" *matCellDef="let row">{{row.Position}}</td>
+      </ng-container>
 
-    <tr mat-header-row *matHeaderRowDef="displayedColumns, sticky: true"></tr>
-    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-  </mat-table>
-  <mat-paginator class="mat-paginator" #paginator [length]="dataSource?.data.length" [pageIndex]="0" [pageSize]="15"
-    [pageSizeOptions]="[15, 50, 100, 150]">
-  </mat-paginator>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns, sticky: true"></tr>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+    <mat-paginator class="mat-paginator" #paginator [length]="dataSource?.data.length" [pageIndex]="0" [pageSize]="25"
+      [pageSizeOptions]="[25, 50, 100, 150]">
+    </mat-paginator>
 </div>
