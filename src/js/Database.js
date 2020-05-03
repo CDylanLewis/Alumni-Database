@@ -1,4 +1,4 @@
-import { Connection, Request } from "tedious";
+const { Connection, Request } = require("tedious");
 
 // Create connection to database
 const config = {
