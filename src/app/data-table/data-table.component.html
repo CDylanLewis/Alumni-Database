@@ -2,41 +2,41 @@
     <mat-table class="mat-table-lg table-responsive table-hover" style="width: fit-content;" matSort aria-label="Elements">
       <!-- FName Column -->
       <ng-container matColumnDef="FName">
-        <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>First Name</th>
-        <td mat-cell style="padding: 1%; " *matCellDef="let row">{{row.FName}}</td>
+        <mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>First Name</mat-header-cell>
+        <mat-cell style="padding: 1%; " *matCellDef="let row">{{row.FName}}</mat-cell>
       </ng-container>
 
       <!-- LName Column -->
       <ng-container matColumnDef="LName">
-        <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Last Name</th>
-        <td mat-cell style="padding: 1%;" *matCellDef="let row">{{row.LName}}</td>
+        <mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Last Name</mat-header-cell>
+        <mat-cell style="padding: 1%;" *matCellDef="let row">{{row.LName}}</mat-cell>
       </ng-container>
 
       <!-- Email Column -->
       <ng-container matColumnDef="Email">
-        <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Email</th>
-        <td mat-cell style="padding: 1%;" *matCellDef="let row">{{row.Email}}</td>
+        <mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Email</mat-header-cell>
+        <mat-cell style="padding: 1%;" *matCellDef="let row">{{row.Email}}</mat-cell>
       </ng-container>
 
       <!-- Phone Column -->
       <ng-container matColumnDef="Phone">
-        <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Phone</th>
-        <td mat-cell style="padding: 1%;" *matCellDef="let row">{{row.Phone}}</td>
+        <mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Phone</mat-header-cell>
+        <mat-cell style="padding: 1%;" *matCellDef="let row">{{row.Phone}}</mat-cell>
       </ng-container>
 
       <!-- Company Column -->
       <ng-container matColumnDef="Company" style="padding: 1%;">
-        <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Company</th>
-        <td mat-cell style="padding: 1%;" *matCellDef="let row">{{row.Company}}</td>
+        <mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Company</mat-header-cell>
+        <mat-cell style="padding: 1%;" *matCellDef="let row">{{row.Company}}</mat-cell>
       </ng-container>
 
       <!-- Name Column -->
       <ng-container matColumnDef="Position">
-        <th mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Position</th>
-        <td mat-cell style="padding: 1%;" *matCellDef="let row">{{row.Position}}</td>
+        <mat-header-cell style="padding: 1%;" *matHeaderCellDef mat-sort-header>Position</mat-header-cell>
+        <mat-cell style="padding: 1%;" *matCellDef="let row">{{row.Position}}</mat-cell>
       </ng-container>
 
-      <tr mat-header-row *matHeaderRowDef="displayedColumns, sticky: true"></tr>
+      <mat-header-row *matHeaderRowDef="displayedColumns, sticky: true"></mat-header-row>
       <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
     </mat-table>
     <mat-paginator class="mat-paginator" #paginator [length]="dataSource?.data.length" [pageIndex]="0" [pageSize]="25"
