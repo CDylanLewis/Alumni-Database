@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "~10.0.0-next.4",
     "@angular/router": "~10.0.0-next.4",
     "angularjs": "0.0.1",
+    "animations": "0.0.0",
     "mysql": "^2.18.1",
     "nodejs": "0.0.0",
     "rxjs": "~6.5.5",

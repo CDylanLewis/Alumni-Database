@@ -1,38 +1,33 @@
-<mat-form-field>
-  <mat-label>Filter</mat-label>
-  <input matInput (keyup)="applyFilter($event)" placeholder="Enter Here">
-</mat-form-field>
 <div class="mat-elevation-z8">
-  <table mat-table class="full-width-table mat-table"
-    style="min-width: 100% !important; width: 100%;" matSort aria-label="Elements">
+  <table mat-table class="full-width-table mat-table" style="min-width: 100% !important;" matSort aria-label="Elements">
     <!-- Id Column -->
     <ng-container matColumnDef="FName">
-      <th mat-header-cell style="padding: 2%; width: 100%;" *matHeaderCellDef mat-sort-header>First Name</th>
-      <td mat-cell style="padding: 2%;  width: 100%" *matCellDef="let row">{{row.FName}}</td>
+      <th mat-header-cell style="padding: 2%;" *matHeaderCellDef mat-sort-header>First Name</th>
+      <td mat-cell style="padding: 2%; " *matCellDef="let row">{{row.FName}}</td>
     </ng-container>
 
     <!-- Name Column -->
     <ng-container matColumnDef="LName">
-      <th mat-header-cell style="padding: 2%; width: 100%" *matHeaderCellDef mat-sort-header>Last Name</th>
-      <td mat-cell style="padding: 2%; width: 100%" *matCellDef="let row">{{row.LName}}</td>
+      <th mat-header-cell style="padding: 2%;" *matHeaderCellDef mat-sort-header>Last Name</th>
+      <td mat-cell style="padding: 2%;" *matCellDef="let row">{{row.LName}}</td>
     </ng-container>
 
     <!-- Id Column -->
     <ng-container matColumnDef="Email">
-      <th mat-header-cell style="padding: 2%; width: 100%" *matHeaderCellDef mat-sort-header>Email</th>
-      <td mat-cell style="padding: 2%; width: 100%" *matCellDef="let row">{{row.Email}}</td>
+      <th mat-header-cell style="padding: 2%;" *matHeaderCellDef mat-sort-header>Email</th>
+      <td mat-cell style="padding: 2%;" *matCellDef="let row">{{row.Email}}</td>
     </ng-container>
 
     <!-- Name Column -->
     <ng-container matColumnDef="Phone">
-      <th mat-header-cell style="padding: 2%; width: 100%" *matHeaderCellDef mat-sort-header>Phone</th>
-      <td mat-cell style="padding: 2%; width: 100%" *matCellDef="let row">{{row.Phone}}</td>
+      <th mat-header-cell style="padding: 2%;" *matHeaderCellDef mat-sort-header>Phone</th>
+      <td mat-cell style="padding: 2%;" *matCellDef="let row">{{row.Phone}}</td>
     </ng-container>
 
     <!-- Id Column -->
     <ng-container matColumnDef="Company" style="padding: 2%;">
-      <th mat-header-cell style="padding: 2%; width: 100%" *matHeaderCellDef mat-sort-header>Company</th>
-      <td mat-cell style="padding: 2%; width: 100%" *matCellDef="let row">{{row.Company}}</td>
+      <th mat-header-cell style="padding: 2%;" *matHeaderCellDef mat-sort-header>Company</th>
+      <td mat-cell style="padding: 2%;" *matCellDef="let row">{{row.Company}}</td>
     </ng-container>
 
     <!-- Name Column -->
